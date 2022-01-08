@@ -1,0 +1,19 @@
+{
+  "name": "Duck Google Search Button",
+  "description": "Search in Google Button from Duckduckgo",
+  "version": "1.0",
+  "manifest_version": 3,
+  "author": "Paco Alba Ponce",
+  "default_locale": "en",
+  "permissions": [
+    "activeTab"
+  ],
+ "content_scripts": [
+   {
+     "matches": ["https://*.duckduckgo.com/*"],
+     "css": ["styles.css"],
+     "js": ["index.js"],
+     "run_at": "document_end"
+   }
+ ]
+}
